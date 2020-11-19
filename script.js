@@ -2,8 +2,7 @@ function calcBMI() {
     let weight, height;
     weight = document.getElementById("weight").value;
     height = document.getElementById("height").value;
-    if (weight > 0  && height > 0) {
-        // BMI = kg / m2
+    if (weight > 0 && height > 0) {
         BMI = (weight / (height * height)).toFixed(2);
         checkBMI(BMI);
     } else {
@@ -13,27 +12,27 @@ function calcBMI() {
 
 function checkBMI(BMI) {
     if (BMI < 18.5) {
-        showBMIresult(BMI, "sottopeso");
+        showBMIresult(BMI, "Sottopeso");
     } else if (18.5 < BMI && BMI < 25) {
-        showBMIresult(BMI, "normopeso");
+        showBMIresult(BMI, "Normopeso");
     } else if (25 < BMI && BMI < 30) {
-        showBMIresult(BMI, "sovrappeso");
+        showBMIresult(BMI, "Sovrappeso");
     } else if (BMI > 30) {
-        showBMIresult(BMI, "obeso");
+        showBMIresult(BMI, "Obeso");
     } else {
         showBMIerror();
     }
 }
 
 function showBMIerror() {
-    document.getElementById("result").innerHTML = "";
-    document.getElementById("resultMessage").innerHTML = "Errore calcolo BMI";
-    document.getElementById("BMIContainer").classList.add("hidden");
+    document.getElementById("resultContainer").classList.remove("hidden");
+    document.getElementById("result").innerHTML = "Errore calcolo BMI";
+    document.getElementById("BMIMeterContainer").classList.add("hidden");
 }
 
 function showBMIresult(BMI, resultMessage) {
-    document.getElementById("result").innerHTML = BMI;
-    document.getElementById("resultMessage").innerHTML = resultMessage;
+    document.getElementById("resultContainer").classList.remove("hidden");
+    document.getElementById("result").innerHTML = "BMI: " + BMI + " - " + resultMessage;
     document.getElementById("BMIMeter").setAttribute("value", BMI);
-    document.getElementById("BMIContainer").classList.remove("hidden");
+    document.getElementById("BMIMeterContainer").classList.remove("hidden");
 }

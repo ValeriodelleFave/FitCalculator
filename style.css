@@ -1,11 +1,43 @@
-h1{
+h1 {
     text-align: center;
 }
 
 .calculatorContainer {
     border: 1px solid #000000;
+    margin: 0px 20%;
+    display: flexbox;
+
 }
 
-.hidden{
+.weightContainer,
+.heightContainer {
+    padding: 5px;
+
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid gray;
+}
+
+.buttonBMICalc {
+    margin: 10px;
+    background-color: gold;
+    border: none;
+}
+
+.buttonBMICalc:hover {
+    background-color: aquamarine;
+}
+
+.BMIMeterContainer {
+    margin: 0px 20%;
+}
+
+.resultContainer{
+    border-top: 1px solid black;
+}
+
+.hidden {
     display: none;
 }

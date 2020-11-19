@@ -1,4 +1,5 @@
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -6,24 +7,25 @@
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js"></script>
 </head>
+
 <body>
     <h1>Fit Calculator</h1>
     <div class="calculatorContainer">
         <div class="weightContainer">
-            <p>Weight: </p>
-            <input type="number" name="" id="weight">
+            <input type="number" id="weight" placeholder="Weight (kg)">
         </div>
         <div class="heightContainer">
-            <p class="">Height: </p>
-            <input type="number" name="" id="height">
+            <input type="number" id="height" placeholder="Height (m)">
         </div>
         <button class="buttonBMICalc" onclick="calcBMI()">Calculate</button>
-        <p>BMI: <p id="result"></p>
-        <p id="resultMessage"></p>
+        <div id="resultContainer" class="resultContainer hidden">
+            <p id="result"></p>
+        </div>
     </div>
 
-    <div id="BMIContainer" class="BMIMeterContainer hidden">
-        <meter id="BMIMeter" min="15.5" low="18.5" optimum="21.75" high="25.1" max="33" ></meter>
+    <div id="BMIMeterContainer" class="BMIMeterContainer hidden">
+        <meter id="BMIMeter" min="15.5" low="18.5" optimum="21.75" high="25.1" max="33"></meter>
     </div>
 </body>
+
 </html>
