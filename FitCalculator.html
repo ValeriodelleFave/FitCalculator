@@ -9,23 +9,25 @@
 </head>
 
 <body>
-    <h1>Fit Calculator</h1>
+    
     <div class="calculatorContainer">
-        <div class="weightContainer">
-            <input type="number" id="weight" placeholder="Weight (kg)">
+        <div class="titleContainer brutto">
+            <h1>Fit Calculator</h1>
         </div>
-        <div class="heightContainer">
-            <input type="number" id="height" placeholder="Height (m)">
+        <div class="valuesContainer brutto">
+            <input type="number" id="weight" class="inputClass" placeholder="Peso (kg)">
+            <input type="number" id="height" class="inputClass" placeholder="Altezza (m)">
         </div>
-        <button class="buttonBMICalc" onclick="calcBMI()">Calculate</button>
-        <div id="resultContainer" class="resultContainer hidden">
+        <div class="buttonContainer brutto">
+            <button id="calc" class="buttonBMICalc" onclick="calcBMI()">Calcola</button>
+            <button id="reset" class="buttonBMICalc" onclick="reset()">Reset</button>
+        </div>
+        <div id="resultContainer" class="resultContainer hidden brutto">
             <p id="result"></p>
         </div>
     </div>
 
-    <div id="BMIMeterContainer" class="BMIMeterContainer hidden">
-        <meter id="BMIMeter" min="15.5" low="18.5" optimum="21.75" high="25.1" max="33"></meter>
-    </div>
+    
 </body>
 
 </html>

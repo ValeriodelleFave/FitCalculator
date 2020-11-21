@@ -1,42 +1,116 @@
-h1 {
-    text-align: center;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 54px;
+    color: white;
+    background-color: #2b1d02;
 }
+
+h1 {
+    font-size: 54px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+/* Hide arrow in input  */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+/* custom classes */
 
 .calculatorContainer {
-    border: 1px solid #000000;
-    margin: 0px 20%;
-    display: flexbox;
-
+    background-color: #7986cb;
+    border: 1px solid black;
+    border-radius: 10%;
+    padding: 30px;
 }
 
-.weightContainer,
-.heightContainer {
-    padding: 5px;
-
+.brutto{
+    /* background-color: #7986cb; */
 }
 
-input {
-    border: none;
-    border-bottom: 1px solid gray;
+.titleContainer {
+    margin-bottom: 100px;
+    border-bottom: 2px solid black;
 }
 
-.buttonBMICalc {
-    margin: 10px;
-    background-color: gold;
-    border: none;
+.valuesContainer {
+    padding-bottom: 20px;
+}
+.inputClass{
+    font-size: 24px;
 }
 
-.buttonBMICalc:hover {
-    background-color: aquamarine;
+.buttonContainer {
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-around;
+}
+.buttonBMICalc{
+    font-size: 24px;
+    background-color: #7986cb;
+    color: white;
+    border: white 1px solid;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    padding: 15px;
+    letter-spacing: 2px;
+}
+.buttonBMICalc:focus{
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+.buttonBMICalc:hover{
+    color: white;   
+    border: #3f51b5 1px solid;
 }
 
-.BMIMeterContainer {
-    margin: 0px 20%;
+#reset{
+    order: 0
+        
+}
+#calc{
+    order: 1;
 }
 
-.resultContainer{
-    border-top: 1px solid black;
+.resultContainer {
+    border-top: 2px solid black;
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 40px;
 }
+
+.redText{
+    color: red;
+}
+
+.orangetext{
+    color: orange;
+}
+
+.greentext{
+    color: green;
+}
+
+/* custom generals  */
 
 .hidden {
     display: none;
