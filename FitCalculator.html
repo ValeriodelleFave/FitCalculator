@@ -15,8 +15,14 @@
             <h1>Fit Calculator</h1>
         </div>
         <div class="valuesContainer brutto">
-            <input type="number" id="weight" class="inputClass" placeholder="Peso (kg)">
-            <input type="number" id="height" class="inputClass" placeholder="Altezza (m)">
+            <div class="weightContainer">
+                <label for="Peso">Peso</label>
+                <input type="number" id="weight" class="inputClass" placeholder="Peso (kg)">
+            </div>
+            <div class="heightContainer">
+                <label for="Altezza">Altezza</label>
+                <input type="number" id="height" class="inputClass" placeholder="Altezza (m)">
+            </div>
         </div>
         <div class="buttonContainer brutto">
             <button id="calc" class="buttonBMICalc" onclick="calcBMI()">Calcola</button>
