@@ -1,2 +1,2 @@
 # FitCalculator
-Creare una calcolatrice per il calcolo della BMI
+La FitCalculator è stata creata e al momento è in grado di calcolare la BMI restituendo l'esito (sottopeso, normopeso, sovrappeso e obeso) fornendo dei colori per calibrare la gravità del pericolo. 
