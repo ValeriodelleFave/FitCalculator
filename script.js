@@ -36,5 +36,6 @@ function showBMIresult(BMI, resultMessage) {
 
 function reset() {
     document.getElementById("weight").value = "";
-    document.getElementById("height").value = "";document.getElementById("resultContainer").classList.add("hidden");
+    document.getElementById("height").value = "";
+    document.getElementById("resultContainer").classList.add("hidden");
 }

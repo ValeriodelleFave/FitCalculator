@@ -5,11 +5,11 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 54px;
     color: white;
-    background-color: #2b1d02;
+    background-color: #12232E;
 }
 
 h1 {
-    font-size: 54px;
+    font-size: 68px;
     text-align: center;
     padding: 0;
     margin: 0;
@@ -21,8 +21,9 @@ input::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
+
 input[type=number] {
-    -moz-appearance:textfield;
+    -moz-appearance: textfield;
 }
 
 p {
@@ -33,14 +34,14 @@ p {
 /* custom classes */
 
 .calculatorContainer {
-    background-color: #7986cb;
+    background-color: #007CC7;
     border: 1px solid black;
     border-radius: 10%;
     padding: 30px;
 }
 
-.brutto{
-    /* background-color: #7986cb; */
+.brutto {
+    /* background-color: #007CC7; */
 }
 
 .titleContainer {
@@ -51,7 +52,8 @@ p {
 .valuesContainer {
     padding-bottom: 20px;
 }
-.inputClass{
+
+.inputClass {
     font-size: 24px;
 }
 
@@ -60,9 +62,10 @@ p {
     display: flex;
     justify-content: space-around;
 }
-.buttonBMICalc{
+
+.buttonBMICalc {
     font-size: 24px;
-    background-color: #7986cb;
+    background-color: #007CC7;
     color: white;
     border: white 1px solid;
     border-top-left-radius: 50%;
@@ -72,22 +75,24 @@ p {
     padding: 15px;
     letter-spacing: 2px;
 }
-.buttonBMICalc:focus{
+
+.buttonBMICalc:focus {
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
     border-bottom-left-radius: 50%;
     border-bottom-right-radius: 50%;
 }
-.buttonBMICalc:hover{
-    color: white;   
-    border: #3f51b5 1px solid;
+
+.buttonBMICalc:hover {
+    color: white;
+    border: #203647 1px solid;
 }
 
-#reset{
+#reset {
     order: 0
-        
 }
-#calc{
+
+#calc {
     order: 1;
 }
 
@@ -98,16 +103,18 @@ p {
     padding-top: 40px;
 }
 
-.redText{
-    color: red;
+
+
+.redText {
+    color: #8B0000;
 }
 
-.orangetext{
+.orangetext {
     color: orange;
 }
 
-.greentext{
-    color: green;
+.greentext {
+    color: #00FF00;
 }
 
 /* custom generals  */
