@@ -33,15 +33,11 @@ p {
 
 /* custom classes */
 
-.calculatorContainer {
+.calculatorContainer{
     background-color: #007CC7;
     border: 1px solid black;
     border-radius: 10%;
     padding: 30px;
-}
-
-.brutto {
-    /* background-color: #007CC7; */
 }
 
 .titleContainer {
